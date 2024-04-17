@@ -1,0 +1,13 @@
+<button class="hamburger" type="button" aria-label="Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+  <span class="visually-hidden">Menu</span>
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+<ul id="menu" role="menu" class="menutop">
+  {% set menu = collections.all | eleventyNavigation %}
+  {% include "partials/menu/menu.njk" %}
+</ul>
+
+{%- css %}{% include "partials/menu/menu.css" %}{% endcss %}
+{%- js %}{% include "partials/menu/menu.js" %}{% endjs %}

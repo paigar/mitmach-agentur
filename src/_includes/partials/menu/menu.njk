@@ -1,0 +1,15 @@
+{% for item in menu %}
+  <li class="nav-item">
+    <a 
+      {% if item.url == page.url %}
+        aria-current="page"
+      {% endif %}
+      href="{{ item.url }}">{{ item.title }}</a>
+    {% if item.children.length %}
+      <ul class="submenu">
+        {% set menu = item.children %}
+        {% include "partials/menu/menu.njk" %}
+    </ul>
+  {% endif %}
+</li>
+{% endfor %}

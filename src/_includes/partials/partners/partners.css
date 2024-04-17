@@ -1,0 +1,24 @@
+.partners {
+	background-color: var(--color-bg);
+	padding: var(--space-xl-2xl) 1rem;
+	text-align: center;
+}
+.partners .titulo {
+	margin-bottom: 1em;
+}
+.partners .intro {
+	max-width: 55ch;
+	margin: auto;
+	padding: 0;
+}
+.partners .logos {
+	display: flex;
+	gap: var(--space-m);
+	justify-content: center;
+	align-items: center;
+	margin: var(--space-l);
+}
+.partners .logopartner img {
+	max-width: 15rem;
+	max-height: 7rem;
+}

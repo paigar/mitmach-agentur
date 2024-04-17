@@ -1,0 +1,50 @@
+---
+layout: layouts/base.njk
+---
+{%- css %}{% include "css/post.css" %}{% endcss %}
+
+{% if imgmain %}
+  <div class="wide cubrir imgmain">
+    {% image imgmain,
+    title %}
+  </div>
+{% endif %}
+<div class="narrow maincontent">
+  <h1 class="titulo">{{ title }}</h1>
+  {{ content | safe }}
+</div>
+
+{% set etiqueta = tags[0] %}
+{%- if collections[etiqueta] %}
+  {%- set previousPost = collections[etiqueta] | getPreviousCollectionItem %}
+  {%- set nextPost = collections[etiqueta] | getNextCollectionItem %}
+  {%- if nextPost or previousPost %}
+    <ul class="links-nextprev wide">
+      <li>
+        {%- if previousPost %}
+          <a href="{{ previousPost.url }}">{% include 'svg/left.svg' %}{{ previousPost.data.title }}</a>
+        {% endif %}
+      </li>
+      <li>
+        {%- if nextPost %}
+          <a href="{{ nextPost.url }}">{{ nextPost.data.title }}{% include 'svg/right.svg' %}</a>
+        {% endif %}
+      </li>
+    </ul>
+  {%- endif %}
+{%- endif %}
+
+<div class="otherarticles fullwidth layout">
+  <div class="wide">
+    <h3 class="titulo fs2">Weitere {{ etiqueta }}</h3>
+    {% set postslist = collections[etiqueta] | excludeByURL(page.url) | head(-3) | reverse %}
+    {% include "partials/postslist/postslist.njk" %}
+  </div>
+</div>
+
+{# Mach mit (colaborar) section #}
+{% include 'partials/mach_mit/mach_mit.njk' %}
+{# End Mach mit (colaborar) section #}
+{# Catering section #}
+{% include 'partials/catering/catering.njk' %}
+{# End Catering section #}

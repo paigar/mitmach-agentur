@@ -1,0 +1,29 @@
+---
+title: Aktuelles
+layout: layouts/base.njk
+permalink: /aktuelles/
+override:tags: []
+eleventyNavigation:
+  key: Aktuelles
+  order: 5
+---
+
+{# Hero section #}
+<div class="imgheader fullwidth cubrir">
+  {% image "../_images/paigar_profesional_photography_of_a_person_reading_a_newspape_eff8a7af-0e52-46b3-87ee-484f555ad021_0.png",
+  "Person, die eine Zeitung liest" %}
+</div>
+<div class="maintitle">
+  <h1>Letzte News</h1>
+</div>
+<p>Bleiben Sie über aktuelle Ereignisse bei der mitMach Agentur informiert</p>
+
+{% set postslist = collections.news | reverse %}
+{% include "partials/postslist/postslist.njk" %}
+
+{# Spende section #}
+{% include "partials/spende/spende.njk" %}
+{# End Spende section #}
+{# Catering section #}
+{% include 'partials/catering/catering.njk' %}
+{# End Catering section #}

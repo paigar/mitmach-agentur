@@ -1,0 +1,45 @@
+---
+layout: layouts/base.njk
+permalink: /uber-uns/
+eleventyNavigation:
+  key: Über uns
+  order: 2
+---
+{%- css %}{% include "./uberuns.css" %}{% endcss %}
+{# Hero section #}
+<div class="imgheader fullwidth cubrir">
+  {% image "../_images/paigar_profesional_photography_of_a_diverse_group_of_people_o_f93ea03c-6395-4e12-bccb-c25c971186ea_0.png",
+  "Gruppe von Menschen verschiedener Ethnien, Geschlechter und Nationalitäten, die am selben Tisch sitzen" %}
+</div>
+{# End Hero section #}
+
+{# Content section #}
+<div class="intro">
+  <h1>{{ collections.unsere_idee[0].data.title }}</h1>
+  {{ collections.unsere_idee[0].content | safe }}
+</div>
+<div class="person fullwidth layout">
+  <div class="foto narrow ajustar">
+    {% image "../_images/htzredfghjklkui.jpg",
+    "Mustafa Mert" %}
+  </div>
+  <h2>{{ collections.mustafa[0].data.title }}
+  </h2>
+  {{ collections.mustafa[0].content | safe }}
+</div>
+{# End Content section #}
+
+{# Projekte section #}
+<div class="wide seccion">
+  <h2 class="titulo">Unsere Projekte</h2>
+  {% set postslist = collections.projekte | head(-3) | reverse %}
+  {% include "partials/postslist/postslist.njk" %}
+  <a href="/projekte" class="boton">Alle Projekte ansehen</a>
+</div>
+{# End Projekte section #}
+{# Catering section #}
+{% include 'partials/catering/catering.njk' %}
+{# End Catering section #}
+{# Spende section #}
+{% include "partials/spende/spende.njk" %}
+{# End Spende section #}

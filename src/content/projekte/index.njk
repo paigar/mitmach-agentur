@@ -1,0 +1,29 @@
+---
+title: Projekte
+layout: layouts/base.njk
+permalink: /projekte/
+override:tags: []
+eleventyNavigation:
+  key: Projekte
+  order: 4
+---
+
+{# Hero section #}
+<div class="imgheader fullwidth cubrir">
+  {% image "../_images/paigar_profesional_photography_of_a_diverse_group_of_people_o_f4db66df-6e24-40dc-ad2f-fa372fd454f7_0.png",
+  "Nachbarn nehmen an einer Gemeindeversammlung teil" %}
+</div>
+<div class="maintitle">
+  <h1>Unsere Projekte</h1>
+</div>
+<p>Entdecken Sie die wichtigsten Projekte, die wir über die mitMach Agentur entwickelt haben</p>
+
+{% set postslist = collections.projekte | reverse %}
+{% include "partials/postslist/postslist.njk" %}
+
+{# Catering section #}
+{% include 'partials/catering/catering.njk' %}
+{# End Catering section #}
+{# Spende section #}
+{% include "partials/spende/spende.njk" %}
+{# End Spende section #}

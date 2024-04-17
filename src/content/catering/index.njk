@@ -1,0 +1,39 @@
+---
+layout: layouts/base.njk
+permalink: /catering/
+eleventyNavigation:
+  key: Catering
+  order: 15
+---
+
+{%- css %}{% include "./catering.css" %}{% endcss %}
+{# Hero section #}
+<div class="imgheader fullwidth cubrir">
+  {% image "../_images/paigar_profesional_photography_of_a_diverse_group_of_women_of_1d599338-827f-4f74-b79a-da9691b3225c_1.png",
+  "Gruppe von Menschen verschiedener Nationalitäten, die einen Catering-Service anbieten", [1400, 900, 500] %}
+</div>
+{# End Hero section #}
+
+{# Content section #}
+<div class="catering ">
+  <h1 class="titulo fs3">Catering, das Power liefert </h1>
+  <p class="subtitulo fs2">…und das nicht nur durch Kalorien</p>
+</div>
+{% for item in collections.catering_service %}
+  <div class="catering layout">
+    <div class="content">
+      {% if item.data.imagen %}
+        {% image item.data.imagen,
+        "{{item.data.title}}",
+        [600] %}
+      {% endif %}
+      <div class="text">
+        {{ item.content | safe }}</div>
+    </div>
+  </div>
+{% endfor %}
+{# End Content section #}
+
+{# mitmachen section #}
+{% include "partials/mitmachen/mitmachen.njk" %}
+{# End mitmachen section #}

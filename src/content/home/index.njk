@@ -1,0 +1,94 @@
+---
+layout: layouts/base.njk
+permalink: /
+eleventyNavigation:
+  key: Home
+  order: 1
+numberOfLatestPostsToShow: 3
+---
+{%- css %}{% include "./home.css" %}{% endcss %}
+{# Hero section #}
+<div class="hero fullwidth layout">
+  <div class="fullwidth">
+    <h1 class="titulo ajustar">{% image "../_images/title.png",
+      "mitMach Agentur" %}</h1>
+    <div class="imagen cubrir">
+      {% image "../_images/paigar_profesional_photography_of_a_diverse__group_of_people__3cff2a04-47e5-49ae-9e50-6a18acb87f08_2.png",
+      "Gruppe von Menschen verschiedener Ethnien, Geschlechter und Nationalitäten, die am selben Tisch sitzen" %}
+    </div>
+    <div class="texto">
+      <p>
+  Die mitMachAgentur ist eine gemeinnützige Unternehmergesellschaft, gegründet mit dem Ziel soziale Projekte in den Kommunen zu initiieren. Ganz nach dem Bottom-Up-Prinzip werden hierbei Projekte partizipativ in Essen und Umgebung umgesetzt. Die MitmachAgentur unterstützt dabei ehrenamtlich engagierte Menschen bei der Finanzierung der Projekt-Idee durch Förderprogramme, sowie der Planung und Umsetzung. So sollen neue Nachbarschaftsprojekte entstehen, die das Gemeinwesen lokal verbessern.
+  </p>
+      <a href="/uber-uns/" class="boton">Kenne uns</a>
+    </div>
+  </div>
+</div>
+{# End Hero section #}
+
+{# Mach mit (colaborar) section #}
+{% include 'partials/mach_mit/mach_mit.njk' %}
+{# End Mach mit (colaborar) section #}
+
+{# Uber uns section #}
+<div class="fullwidth fondofoto">
+  <div class="fondo cubrir">
+    {% image "../_images/paigar_profesional_photography_of_a_diverse_group_of_people_o_4810cbb2-1bfc-4d71-85cd-6f62b3acda04_3.png",
+    "Gruppe von Menschen verschiedener Ethnien, Geschlechter und Nationalitäten, die am selben Tisch sitzen" %}
+  </div>
+  <div class="texto layout">
+    <p>In einigen Stadtteilen Essens leben die Einwohner*innen oft in ihren gleichbleibenden Communities. Die MitmachAgentur hat sich vorgenommen Menschen untereinander wieder mehr zu vernetzen und Wege für ein neues Miteinander zu schaffen.</p>
+    <a href="/uber-uns/" class="boton">Mehr erfahren</a>
+  </div>
+</div>
+{# End Uber uns section #}
+
+{# Projekte section #}
+<div class="wide seccion">
+  <h2 class="titulo">Unsere Projekte</h2>
+  {% set postslist = collections.projekte | head(-3) | reverse %}
+  {% include "partials/postslist/postslist.njk" %}
+  <a href="/projekte" class="boton">Alle Projekte ansehen</a>
+</div>
+{# End Projekte section #}
+
+{# Catering section #}
+{% include 'partials/catering/catering.njk' %}
+{# End Catering section #}
+
+{# Aktuelles section #}
+<div class="wide seccion">
+  <h2 class="titulo">Letzte News</h2>
+  {% set postslist = collections.news | head(-3) | reverse %}
+  {% include "partials/postslist/postslist.njk" %}
+  <a href="/aktuelles/" class="boton">Lesen Sie alle Neuigkeiten</a>
+</div>
+{# End Aktuelles section #}
+
+{# Mitmachen section #}
+{% include "partials/mitmachen/mitmachen.njk" %}
+{# End Mitmachen section #}
+
+{#
+{% set postsCount = collections.posts | length %}
+{% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
+<h1>Latest {{ latestPostsCount }} Post{% if latestPostsCount != 1 %}s{% endif %}
+</h1>
+
+{% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
+{% set postslistCounter = postsCount %}
+{% include "postslist.njk" %}
+
+{% set morePosts = postsCount - numberOfLatestPostsToShow %}
+{% if morePosts > 0 %}
+  <p>{{ morePosts }} more post{% if morePosts != 1 %}s{% endif %} can be found in <a href="/blog/">the archive</a>.</p>
+{% endif %}
+
+{# List every content page in the project #}
+{#
+<ul>
+	{%- for entry in collections.all %}
+	<li><a href="{{ entry.url }}"><code>{{ entry.url }}</code></a></li>
+	{%- endfor %}
+</ul>
+#}

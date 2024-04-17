@@ -1,0 +1,184 @@
+.navbar {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: flex-end;
+}
+.menutop {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	gap: 0.5rem 2rem;
+	margin: 0;
+}
+.menutop li {
+	position: relative;
+}
+.menutop a {
+	display: block;
+	text-decoration: none;
+	position: relative;
+	line-height: 2rem;
+	word-wrap: nowrap;
+}
+.menutop a:hover,
+.menutop a[aria-current="page"] {
+	color: var(--accent2);
+}
+.menutop a[aria-current="page"]::after {
+	position: absolute;
+	left: 0;
+	bottom: -0.25rem;
+	content: "";
+	background-color: var(--accent2);
+	height: 2px;
+	width: 100%;
+}
+.submenu {
+	list-style: none;
+	padding: 0 1rem;
+	display: grid;
+	grid-template-rows: 0fr;
+	justify-content: flex-start;
+	transition: 300ms grid-template-rows ease, 300ms padding ease;
+	background-color: var(--background-color-300);
+	position: absolute;
+	left: -1rem;
+	top: 2rem;
+}
+.submenu li {
+	overflow: hidden;
+	width: 15ch;
+}
+.submenu li a {
+	display: none;
+}
+.dinamic li:hover .submenu {
+	display: grid;
+	grid-template-rows: 1fr;
+	padding: 1rem;
+}
+.dinamic li:hover .submenu li a {
+	display: block;
+}
+nav.navbar .hamburger {
+	all: unset;
+	display: var(--nav-button-display, none);
+	align-items: center;
+	position: relative;
+	cursor: pointer;
+	align-items: center;
+	padding: 0;
+}
+nav.navbar [aria-current="page"] .hamburger-inner,
+nav.navbar [aria-current="page"] .hamburger-inner::before,
+nav.navbar [aria-current="page"] .hamburger-inner::after {
+	background-color: var(--color-text);
+}
+nav.navbar .hamburger-box {
+	width: 40px;
+	height: 24px;
+	display: inline-block;
+	position: relative;
+}
+nav.navbar .hamburger-inner {
+	display: block;
+	top: 50%;
+	margin-top: -2px;
+	transition-duration: 0.22s;
+	transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+nav.navbar .hamburger-inner,
+nav.navbar .hamburger-inner::before,
+nav.navbar .hamburger-inner::after {
+	width: 40px;
+	height: 4px;
+	background-color: currentColor;
+	border-radius: 4px;
+	position: absolute;
+	transition-property: transform;
+	transition-duration: 0.15s;
+	transition-timing-function: ease;
+}
+nav.navbar .hamburger-inner::before,
+nav.navbar .hamburger-inner::after {
+	content: "";
+	display: block;
+}
+nav.navbar .hamburger-inner::before {
+	top: -10px;
+	transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
+}
+nav.navbar .hamburger-inner::after {
+	bottom: -10px;
+	transition: bottom 0.1s 0.25s ease-in,
+		transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+nav.navbar [aria-expanded="true"] .hamburger-inner {
+	transform: rotate(225deg);
+	transition-delay: 0.12s;
+	transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+nav.navbar [aria-expanded="true"] .hamburger-inner::before {
+	top: 0;
+	opacity: 0;
+	transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
+}
+nav.navbar [aria-expanded="true"] .hamburger-inner::after {
+	bottom: 0;
+	transform: rotate(-90deg);
+	transition: bottom 0.1s ease-out,
+		transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+/* Responsive */
+@media (max-width: 55rem) {
+	nav.navbar .hamburger {
+		--nav-button-display: flex;
+	}
+	nav.navbar ul {
+		flex-direction: column;
+		flex-wrap: nowrap;
+		align-items: flex-end;
+	}
+	nav.navbar .hamburger + ul {
+		position: fixed;
+		top: calc(var(--header-height-ext-laptop) + 1px);
+		left: 0;
+		bottom: 100%;
+		width: 100%;
+		overflow: hidden;
+		align-items: center;
+		justify-content: flex-start;
+		text-align: center;
+		z-index: -1;
+		padding: 0 0.5rem;
+		margin: 0;
+		transition: bottom 300ms linear, padding 300ms linear;
+		background-color: var(--background-color-300);
+		box-shadow: none;
+		font-size: var(--fs-2);
+	}
+	nav.navbar .hamburger[aria-expanded="true"] + ul {
+		bottom: 0;
+		padding-block: 1rem;
+	}
+	nav.navbar .menutop > li {
+		line-height: 2em;
+	}
+	nav.navbar .hamburger + .menutop ul {
+		display: block;
+		position: relative;
+		top: 0;
+		left: 0;
+		max-height: 20rem;
+		margin: 0.5em 0;
+		width: 100%;
+		text-align: center;
+		opacity: 1;
+		padding: 0 !important;
+		box-shadow: none;
+		font-size: 0.8em;
+		line-height: 1.2;
+	}
+}

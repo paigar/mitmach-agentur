@@ -1,0 +1,45 @@
+---
+title: Seitenverzeichnis
+permalink: /sitemap.html
+layout: layouts/legal.njk
+eleventyExcludeFromCollections: true
+---
+
+<div class="sitemap">
+  <ul>
+    <li>
+      <a href="/">Home</a>
+    </li>
+    <li>
+      <a href="/uber-uns/">Über uns</a>
+    </li>
+    <li>
+      <a href="/projekte/">Projekte</a>
+      <ul>
+        {%- for item in collections.projekte | reverse %}
+          <li>
+            <a href="{{item.url}}">{{ item.data.title}}</li>
+          {%- endfor %}
+        </ul>
+      </li>
+      <li>
+        <a href="/aktuelles/">Aktuelles</a>
+        <ul>
+          {%- for item in collections.news | reverse %}
+            <li>
+              <a href="{{item.url}}">{{ item.data.title}}</li>
+            {%- endfor %}
+          </ul>
+        </li>
+        <li>
+          <a href="/mitmachen/">Mitmachen</a>
+        </li>
+        <li>
+          <a href="/catering/">Catering</a>
+        </li>
+        <li>
+          <a href="/spenden/">Spenden</a>
+        </li>
+
+      </ul>
+    </div>

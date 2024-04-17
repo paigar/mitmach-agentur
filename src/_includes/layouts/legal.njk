@@ -1,0 +1,19 @@
+---
+layout: layouts/base.njk
+---
+{%- css %}{% include "css/post.css" %}{% endcss %}
+
+{% if imgmain %}
+  <div class="wide cubrir imgmain">
+    {% image imgmain,
+    title %}
+  </div>
+{% endif %}
+<div class="narrow maincontent">
+  <h1 class="titulo">{{ title }}</h1>
+  {{ content | safe }}
+</div>
+
+{# mitmachen section #}
+{% include "partials/mitmachen/mitmachen.njk" %}
+{# End mitmachen section #}

@@ -1,0 +1,74 @@
+---
+layout: layouts/base.njk
+permalink: /mitmachen/
+eleventyNavigation:
+  key: Mitmachen
+  order: 6
+---
+
+{%- css %}{% include "./mitmachen.css" %}{% endcss %}
+{# Hero section #}
+<div class="imgheader fullwidth cubrir">
+  {% image "../_images/paigar_profesional_photography_of_a_woman_working_with_a_lapt_88cb3951-cac9-43c2-a711-9e68ea632fd6_3.png",
+  "Person, die auf einem Computer tippt",
+  [1400, 900, 500] %}
+</div>
+{# End Hero section #}
+
+{# Content section #}
+<div class="mitmachen ">
+  <h1 class="titulo fs3">Hier hast du das Wort</h1>
+  <p class="subtitulo fs2">sei dabei und gestalte mit</p>
+  <p class="mitmachenintro fs1">Stelle uns Fragen, teile deine Gedanken, <br/>stelle deine Idee vor oder werde Teil unserer Gemeinschaft.</p>
+  <div class="formascontacto">
+    <div class="forma">
+      <div class="icon">
+        {% include "svg/map.svg" %}</div>
+      <p>Standort:</p>
+      <p>Hallostr. 193 45309 Essen</p>
+    </div>
+    <div class="forma">
+      <div class="icon">
+        {% include "svg/phone.svg" %}</div>
+      <p>Telefon:</p>
+      <p>
+        <a href="tel:+4917631796400">017631796400</a>
+      </p>
+    </div>
+    <div class="forma">
+      <div class="icon">
+        {% include "svg/wassap.svg" %}</div>
+      <p>Kontakt über Whatsapp:</p>
+      <p>
+        <a href="https://api.whatsapp.com/send/?phone=4917631796400&text=Guten%20Tag%2Cwie%20darf%20ich%20Ihnen%20helfen%3F">017631796400</a>
+      </p>
+    </div>
+  </div>
+  <div class="formulario">
+    <form action="">
+      <div class="campos">
+        <div class="campo input">
+          <input type="text" name="name" placeholder="Name" pattern=".{3,}" title="Geben Sie mindestens 3 Zeichen ein" required>
+        </div>
+        <div class="campo input">
+          <input type="email" name="name" placeholder="Email Adresse" pattern="^[a-z0-9!#$%&‘*+/=?^_`{|}~-]+(?:.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:a-z0-9?.)+a-z0-9?" required>
+        </div>
+        <div class="campo textarea">
+          <textarea name="comments" cols="30" rows="10" placeholder="Ihre Nachricht" ></textarea>
+        </div>
+      </div>
+      <div class="legal">
+        <input type="checkbox" id="legal" name="legal" required>
+        <label for="legal">Ich stimme der Datenschutzerklärung zu</label>
+      </div>
+      <div class="enviar">
+        <button class="boton" type="submit">Senden</button>
+      </div>
+    </form>
+  </div>
+</div>
+{# End Content section #}
+
+{# Spende section #}
+{% include "partials/spende/spende.njk" %}
+{# End Spende section #}

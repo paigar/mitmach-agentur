@@ -1,0 +1,64 @@
+---
+layout: layouts/base.njk
+permalink: /spenden/
+---
+
+{%- css %}{% include "./spenden.css" %}{% endcss %}
+{# Hero section #}
+<div class="imgheader fullwidth cubrir">
+  {% image "../_images/paigar_profesional_photography_of_a_diverse_group_of_people_o_63262f53-b535-43bc-847a-5bde628810d0_0.png",
+  "Gruppe von Menschen unterschiedlicher Nationalität, die eine Spende tätigen",
+  [1400, 900, 500] %}
+</div>
+{# End Hero section #}
+
+{# Content section #}
+<div class="spenden ">
+  <h1 class="titulo fs3">Unterstütze mit uns </h1>
+  <p class="subtitulo fs2">Projekte in Essen und Umgebung</p>
+  <p class="fs1">Hilf dabei, gemeinsame Ziele zu verwirklichen. <br/>Dein Beitrag macht einen Unterschied. </p>
+  <h2 class="titdonar fs2">Spendieren Sie sicher via PAYPAL.</h2>
+  <p>Bitte wählen Sie einen Spendenvorschlag aus oder spenden Sie Ihren Wunschbetrag:</p>
+
+  <div class="donar">
+    <form action="">
+      <div class="options">
+        <div class="option">
+          <input type="radio" name="money" id="money01" value="25" required >
+          <label for="money01">25<small>€</small>
+          </label>
+        </div>
+        <div class="option">
+          <input type="radio" name="money" id="money02" value="50" required >
+          <label for="money02">50<small>€</small>
+          </label>
+        </div>
+        <div class="option">
+          <input type="radio" name="money" id="money03" value="100" required >
+          <label for="money03">100<small>€</small>
+          </label>
+        </div>
+        <div class="option">
+          <input type="radio" name="money" id="money04" value="custom" required >
+          <label for="money04">
+            <span class="top">eigener Betrag</span>
+            <span class="amount">
+              <input type="text" id="moneyammount" name="moneyammount" class="moneyammount" pattern="^[0-9]+$" title="Geben Sie eine positive ganze Zahl ein">
+              <small>€</small>
+            </span>
+          </label>
+        </div>
+      </div>
+      <button class="boton empty">Jetzt mit PayPal spenden</button>
+    </form>
+  </div>
+
+</div>
+{# End Content section #}
+
+{# Catering section #}
+{% include "partials/catering/catering.njk" %}
+{# End Catering section #}
+{# Mitmachen section #}
+{% include "partials/mitmachen/mitmachen.njk" %}
+{# End Mitmachen section #}

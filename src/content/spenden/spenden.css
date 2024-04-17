@@ -1,0 +1,135 @@
+.spenden {
+	padding-block: var(--space-xl);
+}
+.spenden > .titulo {
+	width: fit-content;
+	margin-bottom: 0.75em;
+	position: relative;
+	isolation: isolate;
+}
+.spenden > .titulo::after {
+	content: "";
+	position: absolute;
+	bottom: -0.25em;
+	left: -10%;
+	width: 130%;
+	height: 1.66em;
+	z-index: -1;
+	background-color: var(--color-accent3);
+	transform: rotate(-2deg);
+}
+.spenden .subtitulo {
+	margin-left: 2em;
+	margin-bottom: 1em;
+	border-bottom: 2px solid var(--color-accent3);
+}
+.spendenintro {
+	text-align: center;
+}
+.titdonar {
+	margin: 1.5em 0 0.5em;
+	font-weight: 400;
+	line-height: 1.3;
+}
+.donar {
+	background-color: var(--color-accent3);
+	padding: var(--space-l);
+	margin-block: var(--space-l);
+	border-radius: 0.5rem;
+}
+.options {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: var(--space-m);
+}
+.option {
+	background-color: var(--color-bg);
+	display: grid;
+	place-items: center;
+	height: 12rem;
+	color: var(--color-accent3);
+	border-radius: 0.5rem;
+	position: relative;
+	isolation: isolate;
+	overflow: hidden;
+}
+.option input[type="radio"] {
+	display: none;
+}
+.option label {
+	font-size: var(--fs-4);
+	cursor: pointer;
+	transition: 300ms;
+}
+.option label small {
+	font-size: var(--fs-2);
+}
+.option label::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	z-index: -1;
+	color: transparent;
+	transition: 300ms;
+}
+.option .top {
+	display: block;
+	font-size: var(--fs-2);
+	margin-bottom: 0;
+	text-align: center;
+}
+.option .amount {
+	display: none;
+	align-items: flex-end;
+}
+.option .amount input {
+	width: 5ch;
+	border: none;
+	border-bottom: 2px solid var(--color-accent3);
+	color: var(--color-accent3);
+	background-color: transparent;
+	text-align: center;
+}
+.option .amount small {
+	padding-bottom: 0.3em;
+}
+.option input:checked + label {
+	color: var(--color-bg);
+}
+.option input:checked + label .top {
+	font-size: var(--fs-0);
+	margin-bottom: 1em;
+}
+.option input:checked + label .amount {
+	display: flex;
+}
+.option input:checked + label::after {
+	background-color: var(--color-text);
+}
+.option input:checked + label input {
+	color: var(--color-bg);
+	border-color: var(--color-bg);
+}
+@media (max-width: 55rem) {
+	.options {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+@media (max-width: 25rem) {
+	.options {
+		grid-template-columns: 1fr;
+	}
+	.option {
+		height: 6rem;
+	}
+}
+
+.donar .boton.empty {
+	color: var(--color-bg);
+	border-color: var(--color-bg);
+}
+.donar .boton.empty:hover {
+	color: var(--color-text);
+	background-color: var(--color-accent1);
+	border-color: var(--color-accent1);
+}
