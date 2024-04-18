@@ -119,11 +119,11 @@
               </p>
             </div>
           </div>
-          <ul class="menu">
+          <ul role="menu"  class="menu">
             {% set menu = collections.all | eleventyNavigation %}
             {% include "partials/menu/menu.njk" %}
           </ul>
-          <ul class="menu">
+          <ul role="menu" class="menu">
             {% set menu = [
               {
                 title: "Spenden",
