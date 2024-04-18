@@ -7,8 +7,9 @@
 .menutop {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: flex-end;
 	list-style: none;
-	gap: 0.5rem 2rem;
+	gap: 0 2rem;
 	margin: 0;
 }
 .menutop li {
@@ -31,17 +32,21 @@
 	left: 0;
 	bottom: 0;
 	content: "";
-	background-color: var(--accent2);
+	background-color: currentColor;
 	height: 2px;
 	width: 100%;
 }
 .menutop li:last-child a {
-	padding: 0.3em 0.75em;
-	background-color: var(--color-accent3);
+	padding: 0.4em 1em;
+	background-color: var(--color-accent2);
 	color: var(--color-bg);
+	border-radius: 0.5em;
 }
 .menutop li:last-child a[aria-current="page"] {
-	background-color: var(--color-accent2);
+	background-color: var(--color-accent3);
+}
+.menutop li:last-child a[aria-current="page"]::after {
+	display: none;
 }
 .submenu {
 	list-style: none;
