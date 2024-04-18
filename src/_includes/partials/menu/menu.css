@@ -20,6 +20,7 @@
 	position: relative;
 	line-height: 2rem;
 	word-wrap: nowrap;
+	padding: 0.3em 0;
 }
 .menutop a:hover,
 .menutop a[aria-current="page"] {
@@ -28,11 +29,19 @@
 .menutop a[aria-current="page"]::after {
 	position: absolute;
 	left: 0;
-	bottom: -0.25rem;
+	bottom: 0;
 	content: "";
 	background-color: var(--accent2);
 	height: 2px;
 	width: 100%;
+}
+.menutop li:last-child a {
+	padding: 0.3em 0.75em;
+	background-color: var(--color-accent3);
+	color: var(--color-bg);
+}
+.menutop li:last-child a[aria-current="page"] {
+	background-color: var(--color-accent2);
 }
 .submenu {
 	list-style: none;
