@@ -38,12 +38,12 @@
 }
 .menutop li:last-child a {
 	padding: 0.4em 1em;
-	background-color: var(--color-accent2);
+	background-color: var(--color-accent3);
 	color: var(--color-bg);
 	border-radius: 0.5em;
 }
 .menutop li:last-child a[aria-current="page"] {
-	background-color: var(--color-accent3);
+	background-color: var(--color-accent2);
 }
 .menutop li:last-child a[aria-current="page"]::after {
 	display: none;
