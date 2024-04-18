@@ -1,6 +1,6 @@
 {% for item in menu %}
-  <li class="nav-item">
-    <a role="menuitem" 
+  <li role="menuitem" class="nav-item">
+    <a  
       {% if item.url == page.url %}
         aria-current="page"
       {% endif %}
