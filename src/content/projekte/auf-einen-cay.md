@@ -1,7 +1,7 @@
 ---
 title: Auf einen Cay
 description: Ein Erzählcafé mit anmoderiertem Thema in Kooperation mit „Zollverein- Das Quartier“.
-imgmain: ../_images/paigar_profesional_photography_of_a_diverse_group_of_people_o_059e6734-a8d6-4a9d-b2fd-52bd7c75ad43_1.png
+imgmain: ../_images/Auf einen Cay.JPG
 date: 2023-12-01
 ---
 

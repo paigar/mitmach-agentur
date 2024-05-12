@@ -1,7 +1,7 @@
 ---
 title: Hey Nachbar
 description: Im Bürgerdialog kommen Nachbar\*innen zusammen, um sich über die Lage im eigenen Stadtteil auszutauschen.
-imgmain: ../_images/paigar_profesional_photography_of_a_diverse_group_of_people_o_6c718995-6a77-4292-8781-2c6bf65fd786_1.png
+imgmain: ../_images/Hey Nachbar1.png
 date: 2023-05-01
 ---
 

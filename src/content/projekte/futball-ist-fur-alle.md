@@ -1,7 +1,7 @@
 ---
 title: Fußball ist für alle da (Ausstellungsgespräche)
 description: Eine Gesprächsreihe begleitend zur Sonderausstellung „Mythos und Moderne. Fußball im Ruhrgebiet“ in Kooperation mit dem Ruhr Museum.
-imgmain: ../_images/paigar_profesional_photography_of_a_diverse_group_of_people_o_a21beefd-bdfc-4584-9952-3b1bd33eced1_2.png
+imgmain: ../_images/Fußball .jpg
 date: 2023-11-01
 ---
 

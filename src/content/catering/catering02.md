@@ -1,6 +1,6 @@
 ---
 title: "Power-Catering: Unser Schlüssel zur Stärke und Empowerment"
-imagen: ../_images/paigar_profesional_photography_of_a_diverse_group_of_women_of_c5340a8f-6470-41b4-a3f0-d4750708b2dd_3.png
+imagen: ../_images/Catering2.JPG
 tags: catering_service
 date: 2024-01-02
 permalink: false

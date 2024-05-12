@@ -18,15 +18,20 @@ eleventyNavigation:
   <h1>{{ collections.unsere_idee[0].data.title }}</h1>
   {{ collections.unsere_idee[0].content | safe }}
 </div>
-<div class="person fullwidth layout">
-  <div class="foto narrow ajustar">
-    {% image "../_images/htzredfghjklkui.jpg",
-    "Mustafa Mert" %}
+
+{% for person in collections.team %}
+  <div class="person fullwidth layout{% if person.data.imagen %} conimagen{% else %} sinimagen{% endif %}">
+    {% if person.data.imagen %}
+      <div class="foto narrow ajustar">
+        {% image["../_images/", person.data.imagen] | join,
+        person.data.title %}
+      </div>
+    {% endif %}
+    <h2>{{ person.data.title }}
+    </h2>
+    {{ person.content | safe }}
   </div>
-  <h2>{{ collections.mustafa[0].data.title }}
-  </h2>
-  {{ collections.mustafa[0].content | safe }}
-</div>
+{% endfor %}
 {# End Content section #}
 
 {# Projekte section #}

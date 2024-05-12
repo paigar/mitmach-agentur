@@ -1,6 +1,7 @@
 ---
 title: Mustafa Mert
-tags: mustafa
+tags: team
+imagen: htzredfghjklkui.jpg
 permalink: false
 ---
 

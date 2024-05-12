@@ -1,7 +1,7 @@
 ---
 title: Köfte gegen Frikadelle
 description: In gemeinsamer Männerrunde wird hier nicht nur international gekocht, sondern sich auch über aktuelle Themen ausgetauscht.
-imgmain: ../_images/paigar_profesional_photography_of_a_diverse_group_of_men_of_d_b819308e-bcba-4da3-8b3b-2ce92cfa0b90_2.png
+imgmain: ../_images/Köfte.jpeg
 date: 2018-05-01
 ---
 
