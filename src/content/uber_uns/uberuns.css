@@ -57,6 +57,7 @@
 .person.conimagen h2 {
 	font-size: var(--fs-3);
 	width: fit-content;
+	min-width: 8ch;
 	margin-bottom: 0.75em;
 	position: relative;
 	isolation: isolate;
@@ -80,4 +81,7 @@
 .person p:first-of-type {
 	font-size: 1.3em;
 	line-height: 1.3;
+}
+.person + .conimagen .foto {
+	margin-top: var(--space-2xl);
 }

@@ -1,7 +1,7 @@
 ---
 title: Mustafa Mert
 tags: team
-imagen: htzredfghjklkui.jpg
+imagen: ../_images/team/20240410_133245.jpg
 permalink: false
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Şerife
 tags: team
-imagen:
+imagen: ../_images/team/20240322_111957.jpg
 permalink: false
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Eda Nur Yücel
 tags: team
-imagen:
+imagen: ../_images/team/20240404_131007.jpg
 permalink: false
 ---
 

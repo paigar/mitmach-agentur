@@ -1,7 +1,7 @@
 ---
 title: Furkan Koc
 tags: team
-imagen:
+imagen: ../_images/team/20240322_150112.jpg
 permalink: false
 ---
 

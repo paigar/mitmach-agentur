@@ -1,7 +1,7 @@
 ---
 title: Elvan Koc
 tags: team
-imagen:
+imagen: ../_images/team/20240322_111945.jpg
 permalink: false
 ---
 

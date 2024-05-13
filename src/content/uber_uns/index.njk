@@ -23,7 +23,7 @@ eleventyNavigation:
   <div class="person fullwidth layout{% if person.data.imagen %} conimagen{% else %} sinimagen{% endif %}">
     {% if person.data.imagen %}
       <div class="foto narrow ajustar">
-        {% image["../_images/", person.data.imagen] | join,
+        {% image person.data.imagen,
         person.data.title %}
       </div>
     {% endif %}
