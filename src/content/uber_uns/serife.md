@@ -3,6 +3,7 @@ title: Şerife
 tags: team
 imagen: ../_images/team/20240322_111957.jpg
 permalink: false
+order: 30
 ---
 
 Ich bin Şerife, Ehefrau von Mustafa und Mutter von zwei wunderbaren Kindern. Als Geschäftsführerin der mitMach Agentur ist es mir eine Herzensangelegenheit, mich für die Menschen in unserem Quartier einzusetzen.

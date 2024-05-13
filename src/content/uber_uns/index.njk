@@ -19,7 +19,7 @@ eleventyNavigation:
   {{ collections.unsere_idee[0].content | safe }}
 </div>
 
-{% for person in collections.team %}
+{% for person in collections.team | sortByOrder %}
   <div class="person fullwidth layout{% if person.data.imagen %} conimagen{% else %} sinimagen{% endif %}">
     {% if person.data.imagen %}
       <div class="foto narrow ajustar">

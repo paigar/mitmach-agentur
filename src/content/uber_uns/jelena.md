@@ -3,6 +3,7 @@ title: Jelena Maschke
 tags: team
 imagen:
 permalink: false
+order: 50
 ---
 
 Ich bin Jelena Maschke und ich unterstütze das Team ehrenamtlich im grafischen Bereich sowie bei Social Media. Mein Weg begann mit einem Bachelorstudium in Kunstgeschichte und Theaterwissenschaften, gefolgt von einem weiteren Bachelorstudium im Bereich Produktdesign. Schließlich absolvierte ich mein Masterstudium im Bereich Social Design.

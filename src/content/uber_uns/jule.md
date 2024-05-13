@@ -3,6 +3,7 @@ title: Jule Lux
 tags: team
 imagen:
 permalink: false
+order: 40
 ---
 
 Mein Name ist Jule Lux. Nach meinem Bachelorstudium in Kultur- und Politikwissenschaften und einem Masterstudium im Bereich Cultural Anthropology: Sociocultural Transformation, habe ich meine Leidenschaft für kulturelle und gesellschaftliche Phänomene in meiner aktuellen Position als wissenschaftliche Mitarbeitende am Institut für Europäische Ethnologie und Kulturwissenschaft an der Universität Marburg gefunden.

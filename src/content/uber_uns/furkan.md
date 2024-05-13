@@ -3,6 +3,7 @@ title: Furkan Koc
 tags: team
 imagen: ../_images/team/20240322_150112.jpg
 permalink: false
+order: 60
 ---
 
 Mein Name ist Furkan Koc und ich bin ein angehender Lehrer mit einem Master of Education für das Lehramt an Haupt-, Real-, Sekundar- und Gesamtschulen (HRSGe) mit den Fächern Mathematik und Sport von der Universität Duisburg Essen. Ab Mai werde ich mein Referendariat an einer Gesamtschule hier in Essen beginnen.

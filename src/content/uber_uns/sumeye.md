@@ -3,6 +3,7 @@ title: Sümeyye Özkan
 tags: team
 imagen:
 permalink: false
+order: 20
 ---
 
 Mein Name ist Sümeyye Özkan und ich bin eine freiberufliche Fachkraft für Arbeitssicherheit mit einem abgeschlossenen Maschinenbaustudium. Derzeit unterstütze ich als Assistenz der Geschäftsführung Unternehmen dabei, sichere Arbeitsumgebungen zu schaffen.

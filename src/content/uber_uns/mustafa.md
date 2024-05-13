@@ -3,6 +3,7 @@ title: Mustafa Mert
 tags: team
 imagen: ../_images/team/20240410_133245.jpg
 permalink: false
+order: 10
 ---
 
 Ich bin Mustafa, Mitgründer, Geschäftsführer und Projektleiter der mitMach Agentur. Ich bin Essener, lebe mit meiner Frau Şerife und unserer Katze Yumak in Schonnebeck und engagiere mich seit über 15 Jahren ehrenamtlich im Bezirk.

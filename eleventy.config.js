@@ -50,6 +50,11 @@ module.exports = function (eleventyConfig) {
 		return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
 	});
 
+	eleventyConfig.addFilter("sortByOrder", function sortByOrder(values) {
+		let vals = [...values];
+		return vals.sort((a, b) => Math.sign(a.data.order - b.data.order));
+	});
+
 	// Get the first `n` elements of a collection.
 	eleventyConfig.addFilter("head", (array, n) => {
 		if (!Array.isArray(array) || array.length === 0) {

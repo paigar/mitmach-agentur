@@ -3,6 +3,7 @@ title: Eda Nur Yücel
 tags: team
 imagen: ../_images/team/20240404_131007.jpg
 permalink: false
+order: 80
 ---
 
 Hallo, mein Name ist Eda Nur Yücel. Ich bin 27 Jahre alt und gebürtige Gelsenkirchenerin. Meine Eltern kommen ursprünglich aus dem mittleren Osten der Türkei, aus der Region, wo die leckersten Aprikosen herkommen.

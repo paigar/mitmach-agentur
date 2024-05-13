@@ -3,6 +3,7 @@ title: Elvan Koc
 tags: team
 imagen: ../_images/team/20240322_111945.jpg
 permalink: false
+order: 70
 ---
 
 Ich bin Elvan, als leidenschaftliche Köchin und Mutter von drei wundervollen Kindern liegt mir das Wohl der Kleinen besonders am Herzen. Seit Jahren bin ich im Bezirk VI Zollverein ehrenamtlich tätig und habe dabei die Freude entdeckt, nicht nur für meine eigenen Kinder zu kochen, sondern auch für die Gemeinschaft.
