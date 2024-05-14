@@ -1,5 +1,5 @@
 ---
-title: Şerife
+title: Şerife Mert
 tags: team
 imagen: ../_images/team/20240322_111957.jpg
 permalink: false
