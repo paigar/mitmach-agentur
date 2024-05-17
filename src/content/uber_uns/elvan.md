@@ -1,5 +1,5 @@
 ---
-title: Elvan Koc Şimşek
+title: Elvan Şimşek
 tags: team
 imagen: ../_images/team/20240322_111945.jpg
 permalink: false
