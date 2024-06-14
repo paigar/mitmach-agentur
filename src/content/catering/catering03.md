@@ -15,4 +15,4 @@ Alle unsere Gerichte sind halal. Du kannst auch eine vegane Option wählen. Aus 
 
 Zur Wahl stehen Teigwaren, Suppen, Hauptspeisen, Salate, Dips und Nachspeisen. Wir beraten dich gerne und unterstützen dich beim Entstehen deines Wunschmenüs.
 
-[Sende uns eine Angebotsanfrage zum Power-Catering](/mitmachen/)
+[Sende uns eine Angebotsanfrage zum Power-Catering](/mitmachen_uns/)

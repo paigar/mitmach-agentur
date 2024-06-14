@@ -4,6 +4,7 @@ permalink: /spenden/
 ---
 
 {%- css %}{% include "./spenden.css" %}{% endcss %}
+{%- js %}{% include "./spenden.js" %}{% endjs %}
 {# Hero section #}
 <div class="imgheader fullwidth cubrir">
   {% image "../_images/paigar_profesional_photography_of_a_diverse_group_of_people_o_63262f53-b535-43bc-847a-5bde628810d0_0.png",
@@ -16,32 +17,36 @@ permalink: /spenden/
 <div class="spenden ">
   <h1 class="titulo fs3">Unterstütze mit uns </h1>
   <p class="subtitulo fs2">Projekte in Essen und Umgebung</p>
-  <p class="fs1">Hilf dabei, gemeinsame Ziele zu verwirklichen. <br/>Dein Beitrag macht einen Unterschied. </p>
-  <h2 class="titdonar fs2">Spendieren Sie sicher via PAYPAL.</h2>
-  <p>Bitte senden Sie Ihre Spende an folgendes Paypal-Konto:</p>
-  <p class="fs1">buchhaltung@mitmach-agentur.de</p>
-  {# <p>Bitte wählen Sie einen Spendenvorschlag aus oder spenden Sie Ihren Wunschbetrag:</p> #}
+  <p class="fs1">Dein Beitrag macht einen Unterschied. Hilf uns dabei, gemeinsame Ziele zu verwirklichen. </p>
+  <p class="fs1">Es gibt zahlreiche Wege, die gemeinnützige Zwecke der mitMach Agentur zu fördern. Unsere Ideen und Projekte wachsen kontinuierlich. Deshalb freuen wir uns sehr über Ihre Unterstützung!</p>
+  <h2 class="titdonar fs2">Hier können Sie sicher via PAYPAL spendieren</h2>
 
-  {#   <div class="donar">
-    <form action="">
+  <div class="donar">
+    <form action="https://www.paypal.com/donate" method="post">
+      <input type="hidden" name="business" value="buchhaltung@mitmach-agentur.de">
+      <input type="hidden" name="no_recurring" value="0">
+      <input type="hidden" name="item_name" value="mitMach Agentur gUG">
+      <input type="hidden" name="item_number" value="mitMach Agentur gUG">
+      <input type="hidden" name="currency_code" value="EUR">
+
       <div class="options">
         <div class="option">
-          <input type="radio" name="money" id="money01" value="25" required >
+          <input type="radio" name="amount" id="money01" value="25.00" required >
           <label for="money01">25<small>€</small>
           </label>
         </div>
         <div class="option">
-          <input type="radio" name="money" id="money02" value="50" required >
+          <input type="radio" name="amount" id="money02" value="50.00" checked required >
           <label for="money02">50<small>€</small>
           </label>
         </div>
         <div class="option">
-          <input type="radio" name="money" id="money03" value="100" required >
+          <input type="radio" name="amount" id="money03" value="100.00" required >
           <label for="money03">100<small>€</small>
           </label>
         </div>
         <div class="option">
-          <input type="radio" name="money" id="money04" value="custom" required >
+          <input type="radio" name="amount" id="money04" value="custom" required >
           <label for="money04">
             <span class="top">eigener Betrag</span>
             <span class="amount">
@@ -53,7 +58,39 @@ permalink: /spenden/
       </div>
       <button class="boton empty">Jetzt mit PayPal spenden</button>
     </form>
-  </div> #}
+  </div>
+
+  <p class="fs1">
+    <a href="https://www.paypal.com/donate?business=buchhaltung@mitmach-agentur.de&no_recurring=0&item_name=mitMach+Agentur+gUG&item_number=mitMach+Agentur+gUG&amount=50&currency_code=EUR" target="_blank">buchhaltung@mitmach-agentur.de</a>
+  </p>
+  <br/>
+  <h2 class="titdonar fs2">Hier können Sie sicher via PAYPAL spendieren</h2>
+  <p class="fs1">
+    <b>Bankverbindung:</b>
+  </p>
+  <ul>
+    <li class="fs1">Sparkasse Essen</li>
+    <li class="fs1">IBAN: DE73 3605 0105 0002 8068 26</li>
+    <li class="fs1">BIC: SPESDE3EXXX</li>
+    <li class="fs1">Kto. Inh.: mitMach Agentur gUG
+    </li>
+  </ul>
+  <p>
+    <i>Das Finanzamt Essen hat die mitMach Agentur gUG als gemeinnützige Unternehmensgruppe anerkannt. Daher können Spenden an uns steuerlich abgesetzt werden. Wir stellen Ihnen hierfür gerne Spendenbescheinigungen aus. Bitte geben Sie dafür Ihren Namen und Ihre Anschrift auf der Überweisung an oder senden Sie uns diese Informationen parallel zur Überweisung per E-Mail.</i>
+    <br/><br/>
+    <i>Herzlichen Dank für Ihre Unterstützung!</i>
+  </p>
+
+  <h2 class="titdonar fs2">Aktuelles:</h2>
+  <p>Mustafa erhält IHK-Zertifikat: Erfolgreicher Abschluss des Zertifikatslehrgangs als Geschäftsführung GmbH
+</p>
+  <p>Wir freuen uns, eine großartige Nachricht zu teilen: Mustafa Mert hat das IHK-Zertifikat erhalten und somit den Zertifikatslehrgang als Geschäftsführung GmbH erfolgreich abgeschlossen. Diese bedeutende Leistung unterstreicht sein Engagement und seine Fähigkeiten in der Unternehmensführung. Herzlichen Glückwunsch, Mustafa!
+</p>
+  <p>Mustafa's Erfolg ist ein inspirierendes Beispiel dafür, dass lebenslanges Lernen der Schlüssel zum beruflichen Erfolg ist. 
+</p>
+  <p>Wir sind stolz auf Mustafa und seine Errungenschaften und freuen uns darauf, gemeinsam weiterhin großartige Dinge zu erreichen.
+</p>
+  <p></p>
 
 </div>
 {# End Content section #}

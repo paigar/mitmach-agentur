@@ -1,12 +1,15 @@
 ---
 layout: layouts/base.njk
-permalink: /mitmachen/
+permalink: /mitmachen_uns/
+eleventyNavigation:
+  key: Mitmachen
+  order: 6
 ---
 
 {%- css %}{% include "./mitmachen.css" %}{% endcss %}
 {# Hero section #}
 <div class="imgheader fullwidth cubrir">
-  {% image "../_images/paigar_profesional_photography_of_the_hands_of_a_man_working__a1e1aade-ad34-43f8-87da-33e425c01114_0.png",
+  {% image "../_images/paigar_profesional_photography_of_a_woman_working_with_a_lapt_88cb3951-cac9-43c2-a711-9e68ea632fd6_3.png",
   "Person, die auf einem Computer tippt",
   [1400, 900, 500] %}
 </div>
@@ -44,30 +47,14 @@ permalink: /mitmachen/
   <div class="formulario">
     <form enctype="multipart/form-data" method="POST" action="https://forms.idenautas.work/mitmachagentur.php">
       <div class="campos">
-        <p class="campo textarea">
-          <b>Persönliche Daten</b>
-        </p>
         <div class="campo input">
           <input type="text" name="name" placeholder="Name" pattern=".{3,}" title="Geben Sie mindestens 3 Zeichen ein" required>
         </div>
         <div class="campo input">
           <input type="email" name="email" placeholder="Email Adresse" pattern="^[a-z0-9!#$%&‘*+/=?^_`{|}~-]+(?:.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:a-z0-9?.)+a-z0-9?" required>
         </div>
-        <div class="campo input">
-          <input type="text" name="tfno" placeholder="Telefonnummer" pattern="^(\+49|0)?[1-9]\d{1,4}\d{3,9}$|^(\+49|0)?[1-9]\d{2,4}\/\d{3,9}$
-" required>
-        </div>
-        <div class="campo input">
-          <input type="text" name="firma" placeholder="Firma/Organisation (falls zutreffend)" pattern=".{3,}" title="Geben Sie mindestens 3 Zeichen ein">
-        </div>
-        <p class="campo textarea">
-          <b>Ideenbeschreibung</b>
-        </p>
         <div class="campo textarea">
-          <input type="text" name="titulo" placeholder="Titel der Idee" pattern=".{3,}" title="Geben Sie mindestens 3 Zeichen ein" required>
-        </div>
-        <div class="campo textarea">
-          <textarea name="comments" cols="30" rows="10" placeholder="Bitte beschreiben Sie Ihre Idee in einem Satz" ></textarea>
+          <textarea name="comments" cols="30" rows="10" placeholder="Ihre Nachricht" ></textarea>
         </div>
       </div>
       <div class="legal">

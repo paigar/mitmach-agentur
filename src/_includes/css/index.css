@@ -221,6 +221,9 @@ body {
 	border-color: var(--color-accent3);
 	color: var(--color-bg);
 }
+.borde {
+	border: 1px solid currentColor;
+}
 
 /* Header */
 .site-header {
