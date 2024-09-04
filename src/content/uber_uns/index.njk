@@ -14,26 +14,18 @@ eleventyNavigation:
 {# End Hero section #}
 
 {# Content section #}
-<div class="intro">
-  <h1>{{ collections.unsere_idee[0].data.title }}</h1>
-  {{ collections.unsere_idee[0].content | safe }}
-</div>
 
-{% for person in collections.team | sortByOrder %}
-  <div class="person fullwidth layout{% if person.data.imagen %} conimagen{% else %} sinimagen{% endif %}">
-    {% if person.data.imagen %}
-      <div class="foto narrow ajustar">
-        {% image person.data.imagen,
-        person.data.title %}
-      </div>
-    {% endif %}
-    <h2>{{ person.data.title }}
-    </h2>
-    {{ person.content | safe }}
-  </div>
-{% endfor %}
+<div class="maintitle">
+  <h1>Über uns</h1>
+</div>
+{% set postslist = collections["Uber Uns"] %}
+{% include "partials/postslist/postslist.njk" %}
+
 {# End Content section #}
 
+{# Mitmachen section #}
+{% include "partials/mitmachen/mitmachen.njk" %}
+{# End Mitmachen section #}
 {# Projekte section #}
 <div class="wide seccion">
   <h2 class="titulo">Unsere Projekte</h2>

@@ -6,6 +6,8 @@ date: 2024-01-02
 permalink: false
 ---
 
+<div class="ancla" id="moreinfo"></div>
+
 ## Power-Catering: Unser Schlüssel zur Stärke und Empowerment
 
 Unser Catering ist nicht nur ein kulinarischer Genuss, sondern eine Quelle der Inspiration und Stärkung für uns alle. Jedes Lob, das wir für Qualität, Geschmack und Vorbereitung erhalten, bestätigt, dass wir auf dem richtigen Weg sind. Doch das ist nicht alles, was uns bewegt.

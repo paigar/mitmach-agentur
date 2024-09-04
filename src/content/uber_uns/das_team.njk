@@ -1,0 +1,27 @@
+---
+title: Das Team
+tags: "Uber Uns"
+permalink: /uber-uns/das-team/
+layout: layouts/post.njk
+imgmain: ../_images/paigar_realistic_photography_of_group_of_people_over_35_years_3b53bdac-c114-4bdc-9903-53737c2fa861_2.png
+description: Wir sind eine engagierte Gruppe von Fachleuten, die sich der Aufgabe verschrieben haben, die gemeinschaftlichen Verbindungen in Essen wiederzubeleben.
+---
+
+{%- css %}{% include "./uberuns.css" %}{% endcss %}
+
+<p>Wir sind eine engagierte Gruppe von Fachleuten, die sich der Aufgabe verschrieben haben, die gemeinschaftlichen Verbindungen in Essen wiederzubeleben. Unsere Vielfalt an Fähigkeiten und Erfahrungen ermöglicht es uns, die einzigartigen Herausforderungen anzugehen, denen unsere Nachbarschaften gegenüberstehen. Von der Projektplanung bis zur Mittelbeschaffung arbeitet unser Team unermüdlich daran, Ideen Wirklichkeit werden zu lassen, die Menschen zusammenbringen. </p>
+<p>Wir glauben an die Kraft des ehrenamtlichen Engagements und an die Stärke vereinter Gemeinschaften. Wir sind hier, um alle zu unterstützen, zu leiten und mit ihnen zusammenzuarbeiten, die unsere Vision eines besser vernetzten und lebendigen Essens teilen. Lernen Sie uns kennen und schließen Sie sich unserer Mission an, ein neues Gemeinschaftsgefühl zu schaffen!</p>
+
+{% for person in collections.team | sortByOrder %}
+  <div class="person fullwidth layout{% if person.data.imagen %} conimagen{% else %} sinimagen{% endif %}">
+    {% if person.data.imagen %}
+      <div class="foto narrow ajustar">
+        {% image person.data.imagen,
+        person.data.title %}
+      </div>
+    {% endif %}
+    <h2>{{ person.data.title }}
+    </h2>
+    {{ person.content | safe }}
+  </div>
+{% endfor %}

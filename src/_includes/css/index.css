@@ -96,6 +96,10 @@
 		sans-serif;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	background: var(--color-bg);
 	color: var(--color-text);
@@ -224,6 +228,14 @@ body {
 .borde {
 	border: 1px solid currentColor;
 }
+.alert {
+	background: #ead7a9;
+	color: #424242;
+	font-weight: bold;
+	margin: 1rem 0;
+	padding: 1rem 1.5rem;
+	border-radius: 0.5rem;
+}
 
 /* Header */
 .site-header {
@@ -297,6 +309,10 @@ body {
 }
 .seccion .boton {
 	margin-top: 0;
+}
+.ancla {
+	padding-top: var(--header-height-ext-laptop);
+	margin-top: calc(-1 * var(--header-height-ext-laptop));
 }
 /* Footer */
 footer {

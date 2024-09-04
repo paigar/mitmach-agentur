@@ -55,6 +55,14 @@ module.exports = function (eleventyConfig) {
 		return vals.sort((a, b) => Math.sign(a.data.order - b.data.order));
 	});
 
+	// Filtrar proyectos por finalizados y no
+	eleventyConfig.addFilter("notfinished", function (collection) {
+		return collection.filter((item) => item.data.state !== "finished");
+	});
+	eleventyConfig.addFilter("finished", function (collection) {
+		return collection.filter((item) => item.data.state == "finished");
+	});
+
 	// Get the first `n` elements of a collection.
 	eleventyConfig.addFilter("head", (array, n) => {
 		if (!Array.isArray(array) || array.length === 0) {

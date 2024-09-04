@@ -18,7 +18,11 @@ eleventyNavigation:
 </div>
 <p>Entdecken Sie die wichtigsten Projekte, die wir über die mitMach Agentur entwickelt haben</p>
 
-{% set postslist = collections.projekte | reverse %}
+{% set postslist = collections.projekte | notfinished | reverse %}
+{% include "partials/postslist/postslist.njk" %}
+
+<h2>Abgeschlossene Projekte</h2>
+{% set postslist = collections.projekte | finished | reverse %}
 {% include "partials/postslist/postslist.njk" %}
 
 {# Catering section #}

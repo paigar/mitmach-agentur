@@ -11,6 +11,9 @@ layout: layouts/base.njk
 {% endif %}
 <div class="narrow maincontent">
   <h1 class="titulo">{{ title }}</h1>
+  {% if state is defined and state == "finished" %}
+    <p class="alert">Abgeschlossene Projekte</p>
+  {% endif %}
   {{ content | safe }}
 </div>
 

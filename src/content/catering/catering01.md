@@ -11,4 +11,4 @@ Das legendäre Musti’s Cigköfte nach dem geheimen Rezept - damit hat alles an
 
 Unsere Cigköfte Spendenaktionen werden regelmäßig fortgesetzt. Mit der letzten Aktion wurden Erdbebenopfer unterstützt. Gemeinsam haben wir fast 9.000 € gesammelt.
 
-[Mehr Informationen...](/mitmachen_uns/)
+[Mehr Informationen...](#moreinfo)
